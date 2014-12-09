@@ -1,0 +1,26 @@
+{
+  "name": "git-commit",
+  "version": "0.0.0",
+  "description": "commit git on production env ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gastrodia/git-commit.git"
+  },
+  "keywords": [
+    "git",
+    "commit"
+  ],
+  "author": "gastrodia",
+  "license": "ISC",
+  "bin":{
+    "git-commit":"index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/gastrodia/git-commit/issues"
+  },
+  "homepage": "https://github.com/gastrodia/git-commit"
+}
