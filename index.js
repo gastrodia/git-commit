@@ -2,7 +2,7 @@
 var exec = require('child_process').exec;
 
 exec('git remote -v',function(error,stdout,stderr){
-  var parse = /origin.*?git@(.*?):(.*?)\/(.*?.git)/
+  var parse = /origin.*?git@(.*?):(.*?)\/(.*?)\s/
   if(parse.test(stdout)){
     var regList = parse.exec(stdout);
     var httpUrl = 'https://' + regList[1] + '/' + regList[2] + '/' + regList[3];

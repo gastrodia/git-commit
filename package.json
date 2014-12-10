@@ -1,6 +1,6 @@
 {
   "name": "git-commit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "commit git on production env ",
   "main": "index.js",
   "scripts": {
