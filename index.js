@@ -10,7 +10,7 @@ exec('git remote -v',function(error,stdout,stderr){
         console.log(httpUrl);
     });
   }else{
-    parse = /origin.*?https:\/\/(.*?)\/(.*?)\/(.*?.git)/;
+    parse = /origin.*?https:\/\/(.*?)\/(.*?)\/(.*?)\s/;
     var regList = parse.exec(stdout);
     var gitUrl = 'git@' + regList[1] + ':' + regList[2] + '/' + regList[3];
     exec('git remote set-url origin ' + gitUrl,function(error,stdout,stderr){
